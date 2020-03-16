@@ -1,0 +1,83 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1
+{
+    background-color: #128ced;
+    text-align: center;
+    color: #EEEEEE;
+    font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    width: 100%;
+}
+
+#primulh2
+{
+    padding-top: 7%;
+}
+
+nav
+{
+    position: fixed;
+    width: 100%;
+    margin-top: 3rem;
+    background-color: #128ced;
+}
+
+ul.menu>li, ul.menu>li>ul.submenu>li
+{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;		
+    list-style-type: none;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+ul.menu>li
+{
+    float: left;
+    width: 33.07%;
+}
+
+ul.submenu>li
+{
+    width: 100%;
+}
+
+ul.menu>li>a, ul.submenu>li>a
+{
+    display: block;
+    height:	100%;
+    text-decoration: none;
+    color: white;
+}
+
+ul.menu>li>ul.submenu
+{
+    position: relative;
+    background-color: #128ced;
+    top: 0px;
+}
+
+#active
+{
+    background: #0e70be;
+}
+
+ul.menu>li>a:hover, ul.submenu>li>a:hover
+{
+    background: rgb(30, 189, 238);
+}
+
+ul.menu>li:hover
+{
+    overflow: visible;
+}
