@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+body
+{
+    margin-top: 4.6%;
+}
+
 h1
 {
     background-color: #128ced;
@@ -25,7 +30,6 @@ h1
 
 #first_section
 {
-    margin-top: 4.6%;
     width: 100%;
     height: 53.2rem;
     background-size: cover;
