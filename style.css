@@ -7,7 +7,7 @@
 
 body
 {
-    margin-top: 5%;
+    margin-top: 6.5%;
     background-color: #131417;
     color: white;
     letter-spacing: 0.15rem;
@@ -40,16 +40,21 @@ b
     /* Menu -----------------------------------------------------------------*/
     ul.menu>li, ul.submenu>li
     {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
+    }
+
+    ul.menu>li>a, ul.submenu>li>a
+    {
+        line-height: 3em;
     }
     /* Menu -----------------------------------------------------------------*/
 
     /* Logo -----------------------------------------------------------------*/
     #logo
     {
-        margin-left: 3.5rem;
-        height: 2rem;
-        width: 2rem;
+        margin-left: 2.5rem;
+        height: 2.5rem;
+        width: 2.5rem;
     }
     /* Logo -----------------------------------------------------------------*/
 
@@ -203,13 +208,18 @@ b
     {
         font-size: 1.2rem;
     }
+
+    ul.menu>li>a, ul.submenu>li>a
+    {
+        line-height: 1.65em;
+    }
     /* Menu -----------------------------------------------------------------*/
 
     /* Logo -----------------------------------------------------------------*/
     #logo
     {
-        height: 3.5rem;
-        width: 3.5rem;
+        height: 4rem;
+        width: 4rem;
         margin-left: 3rem;
     }
     /* Logo -----------------------------------------------------------------*/
@@ -217,7 +227,7 @@ b
     /* First Section -----------------------------------------------------------------*/
     #first_section
     {
-        height: 96vh;
+        height: 89vh;
     }
 
     p.joke
@@ -362,21 +372,26 @@ b
     {
         font-size: 1.2rem;
     }
+
+    ul.menu>li>a, ul.submenu>li>a
+    {
+        line-height: 1.65em;
+    }
     /* Menu -----------------------------------------------------------------*/
 
     /* Logo -----------------------------------------------------------------*/
     #logo
     {
         margin-left: 3rem;
-        height: 3.5rem;
-        width: 3.5rem;
+        height: 4rem;
+        width: 4rem;
     }
     /* Logo -----------------------------------------------------------------*/
 
     /* First Section -----------------------------------------------------------------*/
     #first_section
     {
-        height: 90vh;
+        height: 87vh;
     }
 
     p.joke
@@ -511,7 +526,6 @@ h1
     background-color: #128ced;
     text-align: center;
     color: #EEEEEE;
-    font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     width: 100%;
 }
@@ -543,7 +557,6 @@ ul.menu>li, ul.submenu>li
 ul.menu>li
 {
     text-align: center;
-    line-height: 1.5rem;
     float: left;
     width: 33.333333%;
     height: 1.75rem;
@@ -553,7 +566,6 @@ ul.menu>li
 ul.submenu>li
 {
     width: 100%;
-    line-height: 1.5rem;
     height: 1.75rem;
 }
 
@@ -563,7 +575,6 @@ ul.menu>li>a, ul.submenu>li>a
     height:	100%;
     text-decoration: none;
     color: white;
-    line-height: 1.65em;
 }
 
 ul.menu>li>ul.submenu
@@ -592,7 +603,6 @@ ul.menu>li:hover
 /* First Section -----------------------------------------------------------------*/
 #first_section
 {
-    width: 100%;
     background-size: cover;
     background-image: url(img/index1.jpg);
     background-repeat: no-repeat;
