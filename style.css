@@ -10,7 +10,6 @@ body
     background-color: #131417;
     color: white;
     letter-spacing: 0.15rem;
-    margin-top: 7%;
 }
 
 p>small
@@ -23,13 +22,19 @@ b
     font-weight: 900;
 }
 
+html
+{
+    font-size: 15px;
+}
+
 /* Menu -----------------------------------------------------------------*/
-h1
+nav h1
 {
     background-color: #128ced;
     text-align: center;
     color: #EEEEEE;
-    position: fixed;
+    position: absolute;
+    top: 0;
     width: 100%;
 }
 
@@ -100,6 +105,48 @@ ul.menu>li:hover
 }
 /* Menu -----------------------------------------------------------------*/
 
+/* Body -----------------------------------------------------------------*/
+#first_section
+{
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    background-size: cover;
+}
+
+#first_section>h2
+{
+    display: none;
+}
+
+p.joke
+{
+    transform: translateX(-600px);
+    animation: 1s slideIn ease-in-out forwards 1s;
+    color:white;
+    font-weight: 500;
+    line-height: 150%;
+    opacity: 0;
+    text-align: center;
+}
+
+p.joke:nth-child(3)
+{
+    animation-delay: 3s;
+}
+
+@keyframes slideIn
+{
+    100%
+    {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+}
+/* Body -----------------------------------------------------------------*/
+
 /* Footer -----------------------------------------------------------------*/
 footer
 {
@@ -107,15 +154,14 @@ footer
     width: 100%;
     background-color: #0e70be;
     text-align: center;
-
 }
 
 footer>p
 {
-    padding-left: 3%;
+    padding-left: 1.5%;
 }
 
-footer>ul
+footer>ul>li
 {
     justify-content: center;
     flex-direction: column;
@@ -139,7 +185,7 @@ footer ul li a:hover, footer ul>a:hover
 {
     html
     {
-        font-size: 10px;
+        font-size: 16px;
     }
     h1
     {
@@ -151,6 +197,22 @@ footer ul li a:hover, footer ul>a:hover
         font-size: 1rem;
     }
 
+    /* First Section -----------------------------------------------------------------*/
+    #first_section
+    {
+        height: 96.5vh;
+    }
+
+    p.joke
+    {
+        font-size: 200%;
+    }
+
+    main
+    {
+        margin-top: 9%;
+    }
+    /* First Section -----------------------------------------------------------------*/
     /* Menu -----------------------------------------------------------------*/
     ul.menu>li, ul.submenu>li
     {
@@ -185,6 +247,27 @@ footer ul li a:hover, footer ul>a:hover
         font-size: 1.3rem;
     }
 
+    main
+    {
+        margin-top: 15%;
+    }
+
+    /* First Section -----------------------------------------------------------------*/
+    #first_section
+    {
+        height: 95vh;
+    }
+
+    p.joke
+    {
+        font-size: 200%;
+    }
+
+    main
+    {
+        margin-top: 7.5%;
+    }
+    /* First Section -----------------------------------------------------------------*/
     /* Menu -----------------------------------------------------------------*/
     ul.menu>li, ul.submenu>li
     {
@@ -218,6 +301,23 @@ footer ul li a:hover, footer ul>a:hover
     {
         font-size: 1.3rem;
     }
+
+    main
+    {
+        margin-top: 4.5%;
+    }
+
+    /* First Section -----------------------------------------------------------------*/
+    #first_section
+    {
+        height: 91vh;
+    }
+
+    p.joke
+    {
+        font-size: 250%;
+    }
+    /* First Section -----------------------------------------------------------------*/
 
     /* Menu -----------------------------------------------------------------*/
     ul.menu>li, ul.submenu>li

@@ -1,43 +1,7 @@
 /* First Section -----------------------------------------------------------------*/
 #first_section
 {
-    background-size: cover;
     background-image: url(img/index1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#first_section>h2
-{
-    display: none;
-}
-
-p.joke
-{
-    transform: translateX(-600px);
-    animation: 1s slideIn ease-in-out forwards 1s;
-    color:white;
-    font-weight: 500;
-    line-height: 150%;
-    opacity: 0;
-    text-align: center;
-}
-
-p.joke:nth-child(3)
-{
-    animation-delay: 3s;
-}
-
-@keyframes slideIn
-{
-    100%
-    {
-      transform: translateX(0px);
-      opacity: 1;
-    }
 }
 /* First Section -----------------------------------------------------------------*/
 
@@ -108,23 +72,6 @@ section#fourthsection>p
 
 @media screen and (max-width: 840px)
 {
-    body
-    {
-        margin-top: 8%;
-    }
-
-    /* First Section -----------------------------------------------------------------*/
-    #first_section
-    {
-        height: 96.5vh;
-    }
-
-    p.joke
-    {
-        font-size: 200%;
-    }
-    /* First Section -----------------------------------------------------------------*/
-
     /* Second Section -----------------------------------------------------------------*/
     section#second_section
     {
@@ -246,23 +193,6 @@ section#fourthsection>p
 
 @media screen and (max-width: 1250px) and (min-width: 840px)
 {
-    body
-    {
-        margin-top: 8%;
-    }
-
-    /* First Section -----------------------------------------------------------------*/
-    #first_section
-    {
-        height: 95vh;
-    }
-
-    p.joke
-    {
-        font-size: 200%;
-    }
-    /* First Section -----------------------------------------------------------------*/
-
     /* Second Section -----------------------------------------------------------------*/
     section#second_section
     {
@@ -382,23 +312,6 @@ section#fourthsection>p
 
 @media screen and (min-width: 1250px)
 {
-    body
-    {
-        margin-top: 5%;
-    }
-    
-    /* First Section -----------------------------------------------------------------*/
-    #first_section
-    {
-        height: 93vh;
-    }
-
-    p.joke
-    {
-        font-size: 250%;
-    }
-    /* First Section -----------------------------------------------------------------*/
-
     /* Second Section -----------------------------------------------------------------*/
     section#second_section
     {

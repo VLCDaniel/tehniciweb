@@ -1,0 +1,267 @@
+#first_section
+{
+    background-image: url(img/istoric1.jpg);
+}
+
+#second_section
+{
+    display: grid;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+#third_section
+{
+    display: grid;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+#fourth_section
+{
+    margin-bottom: 3%;
+}
+
+#fourth_section>h2
+{
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#fourth_section>table
+{
+    margin: 0 auto;
+    background: linear-gradient(45deg, #370091, #5f2c82);
+    font-family: sans-serif;
+    font-weight: 100;
+    width: 80%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+#fourth_section th, #fourth_section td
+{
+    padding: 1%;
+    background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+#fourth_section th
+{
+    text-align: left;
+}
+
+#fourth_section thead th
+{
+    background-color: #55608f;
+}
+
+#fourth_section tbody tr:hover
+{
+    background-color: rgba(255,255,255,0.3);
+}
+
+#fourth_section tbody td:hover
+{
+    background-color: rgba(255, 255, 255, 0.466);
+}
+
+#fourth_section tfoot
+{
+    text-align: center;
+}
+
+#fourth_section tfoot tr:hover
+{
+    background-color: red;
+}
+
+@media screen and (min-width: 840px)
+{
+    /* Second Section -----------------------------------------------------------------*/
+    #second_section
+    {
+        grid-template-columns: 20% auto;
+        grid-template-rows: auto auto auto;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    #second_section>figure>img
+    {
+        width: 85%;
+        border-radius: 50%;
+    }
+
+    #second_section>h2:nth-child(1)
+    {
+        grid-area: 1 / 2 / span 1 / span 1;
+        margin-bottom: 2%;
+    }
+
+    #second_section>figure:nth-child(2)
+    {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+
+    #second_section>p:nth-child(3)
+    {
+        grid-area: 2 / 2 / span 1 / span 1;
+        padding-left: 2%;
+    }
+
+    #second_section>figure:nth-child(4)
+    {
+        grid-area: 3 / 1 / span 1 / span 1;
+    }
+
+    #second_section>p:nth-child(5)
+    {
+        grid-area: 3 / 2 / span 1 / span 1;
+    }
+    /* Second Section -----------------------------------------------------------------*/
+
+    /* Third Section -----------------------------------------------------------------*/
+    #third_section
+    {
+        grid-template-columns: 20% auto;
+        grid-template-rows: auto auto auto;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    #third_section>figure>img
+    {
+        width: 70%;
+        border-radius: 50%;
+    }
+
+    #third_section>h2:nth-child(1)
+    {
+        grid-area: 1 / 2 / span 1 / span 1;
+    }
+
+    #third_section>figure:nth-child(2)
+    {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+
+    #third_section>p:nth-child(3)
+    {
+        grid-area: 2 / 2 / span 1 / span 1;
+        padding-left: 2%;
+    }
+
+    #third_section>figure:nth-child(4)
+    {
+        grid-area: 3 / 1 / span 1 / span 1;
+    }
+
+    #third_section>p:nth-child(5)
+    {
+        grid-area: 3 / 2 / span 1 / span 1;
+    }
+    /* Third Section -----------------------------------------------------------------*/
+}
+
+@media screen and (max-width: 840px)
+{
+    /* Second Section -----------------------------------------------------------------*/
+    #second_section
+    {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    #second_section>figure>img
+    {
+        width: 50%;
+        border-radius: 50%;
+    }
+
+    #second_section>h2:nth-child(1)
+    {
+        grid-area: 1 / 1 / span 1 / span 1;
+        margin-bottom: 5%;
+    }
+
+    #second_section>figure:nth-child(2)
+    {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+
+    #second_section>p:nth-child(3)
+    {
+        grid-area: 3 / 1 / span 1 / span 1;
+        padding-left: 2%;
+        margin-bottom: 5%;
+    }
+
+    #second_section>figure:nth-child(4)
+    {
+        grid-area: 4 / 1 / span 1 / span 1;
+    }
+
+    #second_section>p:nth-child(5)
+    {
+        grid-area: 5 / 1 / span 1 / span 1;
+    }
+    /* Second Section -----------------------------------------------------------------*/
+
+    /* Third Section -----------------------------------------------------------------*/
+    #third_section
+    {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    #third_section>figure>img
+    {
+        width: 50%;
+        border-radius: 50%;
+    }
+
+    #third_section>h2:nth-child(1)
+    {
+        grid-area: 1 / 1 / span 1 / span 1;
+        margin-bottom: 5%;
+    }
+
+    #third_section>figure:nth-child(2)
+    {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+
+    #third_section>p:nth-child(3)
+    {
+        grid-area: 3 / 1 / span 1 / span 1;
+        padding-left: 2%;
+        margin-bottom: 5%;
+    }
+
+    #third_section>figure:nth-child(4)
+    {
+        grid-area: 4 / 1 / span 1 / span 1;
+    }
+
+    #third_section>p:nth-child(5)
+    {
+        grid-area: 5 / 1 / span 1 / span 1;
+    }
+    /* Third Section -----------------------------------------------------------------*/
+
+    #fourth_section
+    {
+        font-size: 70%;
+    }
+}
