@@ -1,6 +1,6 @@
 #first_section
 {
-    background-image: url(img/istoric1.jpg);
+    background-image: url(../img/istoric1.jpg);
 }
 
 #second_section
@@ -172,6 +172,7 @@
 
 @media screen and (max-width: 840px)
 {
+
     /* Second Section -----------------------------------------------------------------*/
     #second_section
     {
@@ -263,5 +264,10 @@
     #fourth_section
     {
         font-size: 70%;
+    }
+
+    #logo
+    {
+        margin-left: 0;
     }
 }
