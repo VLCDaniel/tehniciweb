@@ -111,8 +111,16 @@
 
 #third_section>figure
 {
-    height: 100%;
+    height: 90%;
 }
+
+#third_section>figure img
+{
+    width: 100%;
+    height: 80%;
+}
+
+#third_section
 
 #third_section>figure>a>img
 {
@@ -183,6 +191,16 @@
         grid-area: 1 / 1 / span 1 / span 2;
         margin-bottom: 3%;
     }
+
+    #third_section
+    {
+        font-size: 0.8rem;
+    }
+
+    #logo
+    {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 350px)
@@ -201,5 +219,10 @@
     {
         grid-area: 1 / 1 / span 1 / span 1;
         margin-bottom: 3%;
+    }
+
+    #logo
+    {
+        margin-left: 0;
     }
 }

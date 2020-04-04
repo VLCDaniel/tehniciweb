@@ -179,6 +179,43 @@ footer ul li a:hover, footer ul>a:hover
 {
     color: red;
 }
+
+.share
+{
+    display: inline-block;
+    width: 15%;
+    border-radius: 3px;
+    text-align: center;
+    padding: 1% 0%;
+    line-height: 2%;
+    transition: all .2s ease;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.share:hover
+{
+    opacity: 0.7;
+}
+
+#facebook
+{
+    background-color: #3b5998;
+}
+
+#sus
+{
+    background-color: red;
+}
+
+#twitter
+{
+    background-color: #55ACEE;
+}
+
 /* Footer -----------------------------------------------------------------*/
 
 @media screen and (max-width: 840px)
@@ -233,6 +270,19 @@ footer ul li a:hover, footer ul>a:hover
         width: 2.5rem;
     }
     /* Logo -----------------------------------------------------------------*/
+
+    footer
+    {
+        letter-spacing: 0;
+    }
+
+    .share
+    {
+        padding: 2%;
+        font-size: 0.6rem;
+        margin: 1%;
+        width: 20%;
+    }
 }
 
 @media screen and (max-width: 1250px) and (min-width: 840px)
@@ -288,6 +338,11 @@ footer ul li a:hover, footer ul>a:hover
         margin-left: 3rem;
     }
     /* Logo -----------------------------------------------------------------*/
+
+    .share
+    {
+        padding: 1.5%;
+    }
 }
 
 @media screen and (min-width: 1250px)
