@@ -1,0 +1,97 @@
+#first_section
+{
+    background-image: url(../img/accesories1.jpg);
+}
+
+#shop
+{
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    margin-bottom: 5%;
+}
+
+#shop>h2
+{
+    grid-area: 1 / 1 / span 1 / span 4;
+    margin-bottom: 2%;
+}
+
+#shop figure img
+{
+    transition: 0.5s linear;
+}
+
+#shop figure img:hover
+{
+    transform: scale(1.2);
+}
+
+#shop a
+{
+    text-decoration: none;
+    color: unset;
+    padding: 1%;
+    background-color: rgb(0, 140, 255);
+    border-radius: 10%;
+}
+
+#shop a:hover
+{
+    background-color: darkorange;
+}
+
+#shop div
+{
+    margin-bottom: 5%;
+}
+
+
+@media screen and (max-width: 1250px) and (min-width: 840px)
+{
+    #shop
+    {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto auto;
+    }
+
+    #shop h2
+    {
+        grid-area: 1 / 1 / span 1 / span 3;
+    }
+
+}
+
+@media screen and (max-width: 840px) and (min-width: 500px)
+{
+    #shop
+    {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+    }
+
+    #shop h2
+    {
+        grid-area: 1 / 1 / span 1 / span 2;
+    }
+
+}
+
+@media screen and (max-width: 500px)
+{
+    #shop
+    {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    #shop h2
+    {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+
+}

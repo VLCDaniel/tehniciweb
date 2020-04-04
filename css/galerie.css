@@ -109,6 +109,11 @@
     width: 50%;
 }
 
+#third_section>figure
+{
+    height: 100%;
+}
+
 #third_section>figure>a>img
 {
     transition: 0.3s linear;
@@ -142,6 +147,11 @@
     #animated_gallery
     {
         height: 10em;
+    }
+
+    #third_section>figure
+    {
+        height: 80%;
     }
 
     #third_section
