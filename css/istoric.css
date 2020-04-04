@@ -30,8 +30,7 @@
 
 #fourth_section>h2
 {
-    margin-bottom: 3%;
-    text-align: center;
+    display: none;
 }
 
 #fourth_section>table
@@ -43,6 +42,13 @@
     width: 80%;
     border-collapse: collapse;
     overflow: hidden;
+    box-shadow: 10px 10px 5px 0px rgba(4, 11, 117, 0.75);
+}
+
+#fourth_section>table>caption
+{
+    margin-bottom: 3%;
+    font-size: 1.6rem;
 }
 
 #fourth_section th, #fourth_section td
@@ -60,6 +66,16 @@
 #fourth_section thead th
 {
     background-color: #55608f;
+}
+
+#fourth_section tbody tr
+{
+    transition: 0.7s linear;
+}
+
+#fourth_section tbody td
+{
+    transition: 0.7s linear;
 }
 
 #fourth_section tbody tr:hover

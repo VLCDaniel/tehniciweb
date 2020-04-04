@@ -39,9 +39,8 @@
 	animation-name:gallery;
 	animation-timing-function:linear;
 	animation-iteration-count:infinite;
-	animation-duration:21s;	
-	transform:scale(1,1);
-	transform-origin:0px center;
+	animation-duration:21s;
+	transform-origin:bottom right;
 }
 
 #animated_gallery figure:nth-of-type(7)
@@ -81,13 +80,13 @@
 
 @keyframes gallery
 { 
-	0% {z-index:10;opacity:1;} /*perioada 0-5% in care se afiseaza fara efect */
-	5% {opacity:1;transform:skewX(0deg);}
-	13%{opacity:1;transform:skewX(85deg)} /* de  aici doresc sa descresc si opacitatea;*/
-	14.28%{z-index:10;opacity:0;transform:skewX(90deg);}
-	14.281%{z-index:-1;}/* il ascund cat mai in spate sa nu vina peste imaginile care erau mai sus in html decat el*/
-	85.71999999%{opacity:1;transform:skewX(0deg);z-index:-1;}	
-	85.72%{z-index:0;}/*setez z-index la 0 ca sa revina la ordinea normala de afisare*/
+	0% {z-index:10;opacity:1;}
+	5% {opacity:1;transform:rotateZ(0deg);}
+	13%{opacity:1;transform:rotateZ(50deg)}
+	14.28%{z-index:10;opacity:0;transform:rotateZ(90deg);}
+	14.281%{z-index:-1;}
+	85.71999999%{opacity:1;transform:rotateZ(0deg);z-index:-1;}	
+	85.72%{z-index:0;}
 	100%{opacity:1;z-index:0;}
 }
 
