@@ -7,7 +7,7 @@
 {
     margin: 5% auto;
     width: 40%;
-    height: 20em;
+    height: 25em;
     overflow: hidden;
     position: relative;
 }
@@ -23,8 +23,7 @@
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-duration: 27s;	
-	transform: scale(1,1);
-	transform-origin: 0px center;
+	transform-origin: 0px top;
 }
 
 #animated_gallery>figure>img
@@ -80,110 +79,117 @@
 
 @keyframes gallery
 { 
-	0% {z-index: 20; opacity: 1;} /*perioada 0-5% in care se afiseaza fara efect */
-	5% {opacity: 1; transform: skewX(0deg);}
-	9%{opacity: 1; transform:skewX(85deg)} /* de  aici doresc sa descresc si opacitatea;*/
-	11.11%{z-index: 20; opacity: 0; transform: skewX(90deg);}
-	11.12%{z-index: -1;} /* il ascund cat mai in spate sa nu vina peste imaginile care erau mai sus in html decat el*/
-	88.87%{ opacity:1; transform:skewX(0deg); z-index:-1;}	
-	88.88%{z-index:0;} /*setez z-index la 0 ca sa revina la ordinea normala de afisare*/
+	0% {z-index: 20; opacity: 1;} /* perioada 0-5% in care se afiseaza fara efect */
+	5% {opacity: 1; transform: rotate(0deg);}
+	11.11%{z-index: 20; opacity: 0; transform: rotate(175deg);}
+	11.12%{z-index: -1;} /* il ascund cat mai in spate sa nu vina peste imaginile care erau mai sus in html decat el */
+	88.87%{ opacity:1; transform: rotate(0deg); z-index:-1;}	
+	88.88%{z-index:0;} /* setez z-index la 0 ca sa revina la ordinea normala de afisare */
 	100%{opacity:1;z-index:0;}
 }
 
 #third_section
 {
     display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
     margin-top: 5%;
     margin-bottom: 5%;
     align-items: center;
     text-align: center;
     justify-items: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 3.5%;
+    overflow: hidden;
 }
 
-@media screen and (min-width: 840px)
+#third_section>figure>a>img
 {
-    /* Second Section -----------------------------------------------------------------*/
-    /* #second_section
+    width: 50%;
+}
+
+#third_section>figure>a>img
+{
+    transition: 0.3s linear;
+}
+
+#third_section>figure a
+{
+    text-decoration: none;
+    color: unset;
+}
+
+#third_section>figure a:hover
+{
+    color: red;
+}
+
+#third_section>figure>a>img:hover
+{
+    transform: scale(1.5);
+    text-decoration: none;
+}
+
+#third_section>h2:nth-child(1)
+{
+    grid-area: 1 / 1 / span 1 / span 4;
+    margin-bottom: 3%;
+}
+
+@media screen and (max-width: 840px) and (min-width: 650px)
+{
+    #animated_gallery
     {
-        grid-template-columns: 20% auto;
-        grid-template-rows: auto auto auto;
-        padding-right: 5%;
-        padding-left: 5%;
+        height: 10em;
     }
 
-    #second_section>figure>img
-    {
-        width: 85%;
-        border-radius: 50%;
-    }
-
-    #second_section>h2:nth-child(1)
-    {
-        grid-area: 1 / 2 / span 1 / span 1;
-        margin-bottom: 2%;
-    }
-
-    #second_section>figure:nth-child(2)
-    {
-        grid-area: 2 / 1 / span 1 / span 1;
-    }
-
-    #second_section>p:nth-child(3)
-    {
-        grid-area: 2 / 2 / span 1 / span 1;
-        padding-left: 2%;
-    }
-
-    #second_section>figure:nth-child(4)
-    {
-        grid-area: 3 / 1 / span 1 / span 1;
-    }
-
-    #second_section>p:nth-child(5)
-    {
-        grid-area: 3 / 2 / span 1 / span 1;
-    } */
-    /* Second Section -----------------------------------------------------------------*/
-
-    /* Third Section -----------------------------------------------------------------*/
     #third_section
     {
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: auto auto auto;
-        padding-right: 5%;
-        padding-left: 5%;
-    }
-
-    #third_section>figure>img
-    {
-        width: 70%;
-        border-radius: 50%;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
     }
 
     #third_section>h2:nth-child(1)
     {
-        grid-area: 1 / 2 / span 1 / span 1;
+        grid-area: 1 / 1 / span 1 / span 3 ;
+    }
+}
+
+@media screen and (max-width: 650px) and (min-width: 350px)
+{
+    #animated_gallery
+    {
+        height: 8em;
+    }
+    #third_section
+    {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
     }
 
-    #third_section>figure:nth-child(2)
+    #third_section>h2:nth-child(1)
     {
-        grid-area: 2 / 1 / span 1 / span 1;
+        grid-area: 1 / 1 / span 1 / span 2;
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 350px)
+{
+    #animated_gallery
+    {
+        height: 7em;
+    }
+    #third_section
+    {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
     }
 
-    #third_section>p:nth-child(3)
+    #third_section>h2:nth-child(1)
     {
-        grid-area: 2 / 2 / span 1 / span 1;
-        padding-left: 2%;
+        grid-area: 1 / 1 / span 1 / span 1;
+        margin-bottom: 3%;
     }
-
-    #third_section>figure:nth-child(4)
-    {
-        grid-area: 3 / 1 / span 1 / span 1;
-    }
-
-    #third_section>p:nth-child(5)
-    {
-        grid-area: 3 / 2 / span 1 / span 1;
-    }
-    /* Third Section -----------------------------------------------------------------*/
 }
