@@ -270,4 +270,9 @@
     {
         margin-left: 0;
     }
+
+    #fourth_section table
+    {
+        display: none;
+    }
 }

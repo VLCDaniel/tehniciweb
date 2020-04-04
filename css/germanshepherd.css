@@ -131,6 +131,16 @@ main aside ul li::before
     content: "↪";
 }
 
+main aside ul
+{
+    margin-bottom: 3%;
+}
+
+main aside video
+{
+    width: 100%;
+}
+
 @media screen and (max-width: 840px) and (min-width: 650px)
 {
 
